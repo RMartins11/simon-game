@@ -1,38 +1,102 @@
-.App {
+
+ 
+.flex-container-simon {
+  margin: 10.32vh auto;
+  display: flex;
+  width: 51.6vh;
+  height: 51.6vh;
+  background: #222;
+  flex-wrap: wrap;
+  margin-top: 20vh;
+  }
+  
+.colors-simon {
+  margin: auto;
+  height: 24.8vh;
+  width: 24.8vh;
+}
+.t-l {
+  background: green;
+  border-top-left-radius : 100%;
+  border: 0.5vh solid black;
+}
+.t-r {
+  background: red;  
+  border-top-right-radius : 100%;
+  border: 0.5vh solid black;
+}
+.b-l {
+  background: yellow;
+  border-bottom-left-radius : 100%;
+  border: 0.5vh solid black;
+}
+.b-r {
+  background: blue;
+  border-bottom-right-radius : 100%;
+  border: 0.5vh solid black;
+}
+
+
+.center-simon {
+  position: absolute;
+  border-radius: 100%;
+  margin: 13.5vh 0 0 15.5vh;
+  margin-left: 13vh;
+  background: white;
+  width: 23vh;
+  height: 23vh;
+  border: 12px solid black;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.anim {
+  opacity: 0.2;
+}
+ 
+
+
+.count-simon {
+  font-family: 'VT323', monospace;
+  color : #DC0D29;
+  font-size : 2em;
+  width : 4.16vh;
+  background-color: #32050C;
+  border : 4px solid #222;
+  border-radius : 10px ;
+  margin-left: 2.07vh;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+.round-btn-simon {
+  width : 2.07vh;
+  height : 2.07vh;
+  position: relative;
+  background-color : yellow;
+  border-radius : 100%;
+  border : 4px solid #444;
+  box-shadow : 0px 2px 3px #222;
+  margin:auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.round-btn-simon:active {
+  box-shadow: 0 1px 1px #292929;
+  top: -4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.led-simon {
+  width: 16px;
+  height: 16px;
+  background-color: #32050C;
+  border-radius : 100%;
+  border: 2px solid #222;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.led-on {
+  background-color: #DC0D29;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.alert {
+  text-align: center
 }
